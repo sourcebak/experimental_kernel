@@ -15,6 +15,10 @@
 #include <linux/kdev_t.h>
 #include <linux/usb/ch9.h>
 
+#ifdef CONFIG_USB_F_NCM
+#include "function/u_ncm.h"
+#endif
+
 #ifdef CONFIG_USB_CONFIGFS_F_ACC
 extern int acc_ctrlrequest(struct usb_composite_dev *cdev,
 				const struct usb_ctrlrequest *ctrl);
