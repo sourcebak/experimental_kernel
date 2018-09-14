@@ -14,6 +14,22 @@ config ARCH_SDM660
 	select ARM_AMBA
 	select SPARSE_IRQ
 	select MULTI_IRQ_HANDLER
+	select COMMON_CLK_MSM
+
+config ARCH_MSM8940
+        bool "Enable support for MSM8940"
+        select CPU_V7
+        select HAVE_ARM_ARCH_TIMER
+        select PINCTRL
+        select QCOM_SCM if SMP
+        select PM_DEVFREQ
+        select CLKDEV_LOOKUP
+        select HAVE_CLK
+        select HAVE_CLK_PREPARE
+        select COMMON_CLK_MSM
+
+config ARCH_MSM8909
+	bool "Enable support for MSM8909"
 	select HAVE_ARM_ARCH_TIMER
 	select MAY_HAVE_SPARSE_IRQ
 	select COMMON_CLK
