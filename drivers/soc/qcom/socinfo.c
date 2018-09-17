@@ -570,8 +570,9 @@ static struct msm_soc_info cpu_of_id[] = {
 	[345] = {MSM_CPU_636, "SDM636"},
 	[346] = {MSM_CPU_636, "SDA636"},
 
-	/* 455 ID */
-	[385] = {MSM_CPU_455, "SDM455"},
+	/* MSM8940 IDs */
+        [313] = {MSM_CPU_8940, "MSM8940"},
+
 
 	/* Uninitialized IDs are not known to run Linux.
 	   MSM_CPU_UNKNOWN is set to 0 to ensure these IDs are
@@ -1312,7 +1313,27 @@ static void * __init setup_dummy_socinfo(void)
 		dummy_socinfo.id = 319;
 		strlcpy(dummy_socinfo.build_id, "apq8098 - ",
 			sizeof(dummy_socinfo.build_id));
-	}
+	} else if (early_machine_is_sdm439()) {
+		dummy_socinfo.id = 353;
+		strlcpy(dummy_socinfo.build_id, "sdm439 - ",
+				sizeof(dummy_socinfo.build_id));
+	} else if (early_machine_is_sdm429()) {
+		dummy_socinfo.id = 354;
+		strlcpy(dummy_socinfo.build_id, "sdm429 - ",
+				sizeof(dummy_socinfo.build_id));
+	} else if (early_machine_is_sda439()) {
+		dummy_socinfo.id = 363;
+		strlcpy(dummy_socinfo.build_id, "sda439 - ",
+				sizeof(dummy_socinfo.build_id));
+	} else if (early_machine_is_sda429()) {
+		dummy_socinfo.id = 364;
+		strlcpy(dummy_socinfo.build_id, "sda429 - ",
+				sizeof(dummy_socinfo.build_id));
+	} else if (early_machine_is_msm8940()) {
+                dummy_socinfo.id = 313;
+                strlcpy(dummy_socinfo.build_id, "msm8940 - ",
+                        sizeof(dummy_socinfo.build_id));
+        }
 
 	strlcat(dummy_socinfo.build_id, "Dummy socinfo",
 		sizeof(dummy_socinfo.build_id));
