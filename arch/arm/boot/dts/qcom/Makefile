@@ -296,6 +296,9 @@ dtb-$(CONFIG_ARCH_SDM630) += sdm630-rumi.dtb \
 	sdm455-rcm.dtb \
 	sdm455-internal-codec-rcm.dtb
 
+dtb-$(CONFIG_ARCH_MSM8940) += msm8940-pmi8950-qrd-sku7_S88536AA2.dtb
+
+
 ifeq ($(CONFIG_ARM64),y)
 always          := $(dtb-y)
 always          += $(dtbo-y)
