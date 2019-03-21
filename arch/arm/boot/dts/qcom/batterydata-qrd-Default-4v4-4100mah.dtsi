@@ -1,93 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-  <title>GitLab is not responding (502)</title>
-  <style>
-    body {
-      color: #666;
-      text-align: center;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: auto;
-      font-size: 14px;
-    }
 
-    h1 {
-      font-size: 56px;
-      line-height: 100px;
-      font-weight: 400;
-      color: #456;
-    }
-
-    h2 {
-      font-size: 24px;
-      color: #666;
-      line-height: 1.5em;
-    }
-
-    h3 {
-      color: #456;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 28px;
-    }
-
-    hr {
-      max-width: 800px;
-      margin: 18px auto;
-      border: 0;
-      border-top: 1px solid #EEE;
-      border-bottom: 1px solid white;
-    }
-
-    img {
-      max-width: 40vw;
-      display: block;
-      margin: 40px auto;
-    }
-
-    a {
-      line-height: 100px;
-      font-weight: 400;
-      color: #4A8BEE;
-      font-size: 18px;
-      text-decoration: none;
-    }
-
-    .container {
-      margin: auto 20px;
-    }
-
-    .go-back {
-      display: none;
-    }
-
-  </style>
-</head>
-
-<body>
-  <a href="/">
-    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEwIiBoZWlnaHQ9IjIxMCIgdmlld0JveD0iMCAwIDIxMCAyMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEwNS4wNjE0IDIwMy42NTVsMzguNjQtMTE4LjkyMWgtNzcuMjhsMzguNjQgMTE4LjkyMXoiIGZpbGw9IiNlMjQzMjkiLz4KICA8cGF0aCBkPSJNMTA1LjA2MTQgMjAzLjY1NDhsLTM4LjY0LTExOC45MjFoLTU0LjE1M2w5Mi43OTMgMTE4LjkyMXoiIGZpbGw9IiNmYzZkMjYiLz4KICA8cGF0aCBkPSJNMTIuMjY4NSA4NC43MzQxbC0xMS43NDIgMzYuMTM5Yy0xLjA3MSAzLjI5Ni4xMDIgNi45MDcgMi45MDYgOC45NDRsMTAxLjYyOSA3My44MzgtOTIuNzkzLTExOC45MjF6IiBmaWxsPSIjZmNhMzI2Ii8+CiAgPHBhdGggZD0iTTEyLjI2ODUgODQuNzM0Mmg1NC4xNTNsLTIzLjI3My03MS42MjVjLTEuMTk3LTMuNjg2LTYuNDExLTMuNjg1LTcuNjA4IDBsLTIzLjI3MiA3MS42MjV6IiBmaWxsPSIjZTI0MzI5Ii8+CiAgPHBhdGggZD0iTTEwNS4wNjE0IDIwMy42NTQ4bDM4LjY0LTExOC45MjFoNTQuMTUzbC05Mi43OTMgMTE4LjkyMXoiIGZpbGw9IiNmYzZkMjYiLz4KICA8cGF0aCBkPSJNMTk3Ljg1NDQgODQuNzM0MWwxMS43NDIgMzYuMTM5YzEuMDcxIDMuMjk2LS4xMDIgNi45MDctMi45MDYgOC45NDRsLTEwMS42MjkgNzMuODM4IDkyLjc5My0xMTguOTIxeiIgZmlsbD0iI2ZjYTMyNiIvPgogIDxwYXRoIGQ9Ik0xOTcuODU0NCA4NC43MzQyaC01NC4xNTNsMjMuMjczLTcxLjYyNWMxLjE5Ny0zLjY4NiA2LjQxMS0zLjY4NSA3LjYwOCAwbDIzLjI3MiA3MS42MjV6IiBmaWxsPSIjZTI0MzI5Ii8+Cjwvc3ZnPgo="
-       alt="GitLab Logo" />
-  </a>
-  <h1>
-    502
-  </h1>
-  <div class="container">
-    <h3>Whoops, GitLab is taking too much time to respond.</h3>
-    <hr />
-    <p>Try refreshing the page, or going back and attempting the action again.</p>
-    <p>Please contact your GitLab administrator if this problem persists.</p>
-    <a href="javascript:history.back()" class="js-go-back go-back">Go back</a>
-  </div>
-  <script>
-    (function () {
-      var goBack = document.querySelector('.js-go-back');
-
-      if (history.length > 1) {
-        goBack.style.display = 'inline';
-      }
-    })();
-  </script>
-</body>
-</html>
+qcom,2312470_wingtech_a12atl_4000mah_default {
+	qcom,max-voltage-uv = <4400000>;
+	qcom,nom-batt-capacity-mah = <4000>;
+	qcom,batt-id-kohm = <1>;
+	qcom,battery-beta = <4150>;
+	qcom,battery-type = "Generic_Battery";
+	qcom,chg-rslow-comp-c1 = <3011278>;
+	qcom,chg-rslow-comp-c2 = <4185582>;
+	qcom,chg-rs-to-rslow = <966005>;
+	qcom,chg-rslow-comp-thr = <0xA3>;
+	qcom,checksum = <0x90C2>;
+	qcom,gui-version = "PMI8950GUI - 2.0.0.15";
+	qcom,fg-profile-data = [
+			E1 83 CD 7C
+			FA 80 DE 76
+			69 83 6B 75
+			2B 8A 24 95
+			12 82 86 9A
+			72 BD 12 CA
+			56 11 EC 83
+			B5 7C C8 80
+			55 76 5A 83
+			A6 60 5E 81
+			ED 8D 54 82
+			99 99 E9 BC
+			CD C9 54 0E
+			65 10 A4 58
+			14 70 EE FC
+			0F 36 44 3D
+			FD 2E 00 00
+			60 3F 44 33
+			35 3F 00 00
+			00 00 00 00
+			00 00 00 00
+			F7 6B DA 6A
+			5F 63 D8 80
+			EB 6F 3C 62
+			B5 57 6B 78
+			DF 6E AE 60
+			8A 84 5B A3
+			17 A8 63 2D
+			65 A0 71 0C
+			28 00 FF 36
+			F0 11 30 03
+			00 00 00 0C
+	];
+};
