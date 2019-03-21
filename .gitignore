@@ -45,6 +45,7 @@ Module.symvers
 /tags
 /TAGS
 /linux
+/out
 /vmlinux
 /vmlinux.32
 /vmlinux-gdb.py
